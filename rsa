@@ -29,13 +29,6 @@ check_factor()
 			num2=$numcp
 		fi
 
-	for factor in $(factor $num1); do
-		if [ $factor -ne 1 ]; then
-			echo "Error: $factor is not a prime number."
-			exit 1
-		fi
-	done
-
 	echo "$num$num1*$num2"
 }
 
